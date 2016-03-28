@@ -1,0 +1,24 @@
+digraph G {
+	node [shape=box];
+	"JFBarChartItemFactory" -> "JFBarLayerItem";
+	"DTGraphicsConverter" -> {};
+	"JFBarChartLabel" -> {};
+	"ViewController" -> "JFBarChartItemFactory";
+	"ViewController" -> "JFBarchartView";
+	"JFBarShaperLayer" -> {};
+	"JFBarchartView" -> "JFBarLayerItem";
+	"JFBarchartView" -> "JFBarShaperLayer";
+	"JFBarchartView" -> "JFBarPath";
+	"JFBarchartView" -> "JFBarChartLabel";
+	"AppDelegate" -> {};
+	"JFBarLayerItem" -> "JFBarShaperLayer";
+	"JFBarLayerItem" -> "JFBarPath";
+	"JFBarLayerItem" -> "DTGraphicsConverter";
+	"JFBarPath" -> {};
+	"main" -> "AppDelegate";
+	
+	"PrefixHeader" [color=red];
+	
+	edge [color=blue, dir=both];
+}
+
